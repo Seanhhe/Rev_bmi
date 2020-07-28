@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Rev_bmi</string>
+    <string name="mytitle">BMI App</string>
+    <string name="weight">Weight</string>
+    <string name="height">Height</string>
+    <string name="calculate_bmi">CALCULATE BMI</string>
+    <string name="help">HELP</string>
 </resources>
