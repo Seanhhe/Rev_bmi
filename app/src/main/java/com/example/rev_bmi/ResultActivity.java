@@ -16,7 +16,7 @@ public class ResultActivity extends AppCompatActivity {
 //        Intent intent = getIntent();    // 先取得intent
 //        float bmi = intent.getFloatExtra("BMI_EXTRA", 0);   // 參數一:資料標籤、參數二:取不到資料時的預設值
 //        TextView result = findViewById(R.id.result);
-//        result.setText("豬豬的 BMI 值為：" + bmi);
+//        result.setText("您的 BMI 值為：" + bmi);
 
         //  複雜資料
         Intent intent = getIntent();
@@ -24,6 +24,9 @@ public class ResultActivity extends AppCompatActivity {
         Bundle bag = intent.getExtras();
         float bmi = bag.getFloat("BMI_EXTRA", 0);
         String test = bag.getString("TEST_EXTRA", null);
+        TextView result = findViewById(R.id.result);
+        result.setText("您的 BMI 值為：" + bmi);
+
 
         //  抽取字串成為資源檔(.xml)
 
